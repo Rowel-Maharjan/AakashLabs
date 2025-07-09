@@ -39,7 +39,10 @@ const Contact: React.FC = () => {
     }
   };
   return (
-    <div id="contact" className="relative flex items-center justify-center overflow-hidden bg-white px-3 py-6 pb-16 md:px-6 md:pt-24">
+    <div
+      id="contact"
+      className="relative flex items-center justify-center overflow-hidden bg-white px-3 py-6 pb-16 md:px-6 md:pt-24"
+    >
       <div className="relative z-10 mx-auto w-full max-w-[1200px] space-y-16">
         <div className="mx-auto mb-14 max-w-2xl text-center">
           <Title>— Get In Touch —</Title>
