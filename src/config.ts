@@ -115,3 +115,75 @@ export const features = [
       "From user experience to performance, we maintain rigorous standards to ensure every detail is done right.",
   },
 ];
+
+export const allTeamMembers = [
+  {
+    id: 1,
+    name: "Ankur Agrawal",
+    role: "Managing Director",
+    image: "/team/team-1.jpg",
+    socialLinks: [
+      {
+        href: "https://www.facebook.com/AakashGroupNepal/",
+        label: "Facebook",
+        icon: faFacebookF,
+      },
+      {
+        href: "https://www.instagram.com/aakash.group/",
+        label: "Instagram",
+        icon: faInstagram,
+      },
+      {
+        href: "https://www.linkedin.com/company/aakashgroupnepal/?originalSubdomain=np",
+        label: "LinkedIn",
+        icon: faLinkedin,
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Rowel Maharjan",
+    role: "Full Stack Developer",
+    image: "/team/team-2.jpg",
+    socialLinks: [
+      {
+        href: "https://www.facebook.com/AakashGroupNepal/",
+        label: "Facebook",
+        icon: faFacebookF,
+      },
+      {
+        href: "https://www.instagram.com/aakash.group/",
+        label: "Instagram",
+        icon: faInstagram,
+      },
+      {
+        href: "https://www.linkedin.com/company/aakashgroupnepal/?originalSubdomain=np",
+        label: "LinkedIn",
+        icon: faLinkedin,
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Chirag Khatiwada",
+    role: "Frontend Developer",
+    image: "/team/team-3.jpg",
+    socialLinks: [
+      {
+        href: "https://www.facebook.com/AakashGroupNepal/",
+        label: "Facebook",
+        icon: faFacebookF,
+      },
+      {
+        href: "https://www.instagram.com/aakash.group/",
+        label: "Instagram",
+        icon: faInstagram,
+      },
+      {
+        href: "https://www.linkedin.com/company/aakashgroupnepal/?originalSubdomain=np",
+        label: "LinkedIn",
+        icon: faLinkedin,
+      },
+    ],
+  },
+];
