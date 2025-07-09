@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { slides } from "../config";
-import { PATHNAME } from "../pathname";
+import { slides } from "../../config";
+import { PATHNAME } from "../../pathname";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

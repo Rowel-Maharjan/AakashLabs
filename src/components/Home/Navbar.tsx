@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { navbarItems, socialLinks } from "../config";
-import { PATHNAME } from "../pathname";
+import { navbarItems, socialLinks } from "../../config";
+import { PATHNAME } from "../../pathname";
 
 const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

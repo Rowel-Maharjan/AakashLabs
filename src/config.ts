@@ -3,6 +3,7 @@ import {
   faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { Target, Lightbulb, Users, Award } from "lucide-react";
 
 import { PATHNAME } from "./pathname";
 
@@ -43,24 +44,74 @@ export const socialLinks = [
   },
 ];
 
-
 export const slides = [
   {
     title: "Innovate with Technology",
     subtitle: "Building Tomorrow's Technology Today",
-    image:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=820&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "./slider/slider-1.png",
   },
   {
     title: "Development Team",
     subtitle: "Your Vision, Our Expertise",
-    image:
-      "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "./slider/slider-2.png",
   },
   {
     title: "Quality Assurance",
     subtitle: "Excellence in Every Detail",
-    image:
-      "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "./slider/slider-3.png",
+  },
+];
+
+export const achievements = [
+  {
+    start: 0,
+    end: 100,
+    suffix: "%",
+    delay: 0.2,
+    duration: 3,
+    title: "CUSTOMER SATISFACTION",
+  },
+  {
+    start: 0,
+    end: 32,
+    suffix: "+",
+    delay: 0.2,
+    duration: 2,
+    title: "EXPERTS & SPECIALISTS",
+  },
+  {
+    start: 0,
+    end: 63,
+    suffix: "+",
+    delay: 0.2,
+    duration: 2.5,
+    title: "SUCCESSFUL DEPLOYMENTS",
+  },
+];
+
+export const features = [
+  {
+    icon: Target,
+    title: "Purpose-Driven",
+    description:
+      "We build with intention focusing on delivering results that truly matter and drive long-term client success.",
+  },
+  {
+    icon: Lightbulb,
+    title: "Innovation at Core",
+    description:
+      "By leveraging modern technologies and bold ideas, we tackle complex challenges with smart, scalable solutions.",
+  },
+  {
+    icon: Users,
+    title: "Team-Centric Approach",
+    description:
+      "We collaborate closely with our clients, working as one team to ensure transparency, trust, and shared outcomes.",
+  },
+  {
+    icon: Award,
+    title: "Uncompromising Quality",
+    description:
+      "From user experience to performance, we maintain rigorous standards to ensure every detail is done right.",
   },
 ];
