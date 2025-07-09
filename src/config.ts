@@ -282,6 +282,46 @@ export const contactData = [
     id: "phone",
     title: "Phone Number",
     icon: Phone,
-    content: ["+977 9876540987", "+977-9874615942"],
+    content: ["+977 9876540987", "+977 9874615942"],
+  },
+];
+
+export const contacts = [
+  {
+    Icon: MapPin,
+    title: "Locations",
+    href: "https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873",
+    text: "Putalisadak, Kathmandu",
+  },
+  {
+    Icon: Mail,
+    title: "Email Us",
+    href: "mailto:support@gmail.com",
+    text: "support@gmail.com",
+  },
+  {
+    Icon: Phone,
+    title: "Phone Us",
+    href: "tel:+012-345-6789",
+    text: "+977 9876540987",
+  },
+];
+
+export const footerServices = [
+  {
+    title: "Home",
+    link: PATHNAME.home,
+  },
+  {
+    title: "About",
+    link: PATHNAME.about,
+  },
+  {
+    title: "Team",
+    link: PATHNAME.team,
+  },
+  {
+    title: "Contact",
+    link: PATHNAME.contact,
   },
 ];
