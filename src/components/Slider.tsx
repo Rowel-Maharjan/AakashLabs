@@ -45,19 +45,23 @@ const Slider = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 bg-gradient-to-r ${slide.bgColor} transition-opacity duration-1000 ${
+          className={`absolute inset-0 transition-opacity duration-1000 ${
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
+          style={{
+            backgroundImage: `url(${slide.image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
-          <div className="flex h-full items-center justify-center text-white">
+          <div className="bg-opacity-50 absolute inset-0 bg-black/80" />
+
+          <div className="relative z-10 flex h-full items-center justify-center text-white">
             <div className="max-w-4xl px-4 text-center">
-              <h1 className="mb-4 text-5xl font-bold md:text-7xl">
+              <h1 className="mb-4 text-5xl font-bold md:text-6xl">
                 {slide.title}
               </h1>
               <h2 className="mb-6 text-2xl md:text-3xl">{slide.subtitle}</h2>
-              <p className="mx-auto mb-8 max-w-2xl text-lg md:text-xl">
-                {slide.description}
-              </p>
               <a href={PATHNAME.contact}>
                 <button className="transform cursor-pointer rounded-lg bg-white px-8 py-3 font-semibold text-gray-800 transition-colors hover:scale-105 hover:bg-gray-100">
                   Get Started
@@ -70,14 +74,14 @@ const Slider = () => {
 
       <button
         onClick={prevSlide}
-        className="bg-opacity-20 hover:bg-opacity-30 absolute top-1/2 left-4 hidden -translate-y-1/2 cursor-pointer rounded-full bg-white p-2 text-black sm:block"
+        className="bg-opacity-20 hover:bg-opacity-30 absolute top-1/2 left-4 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full bg-white p-2 text-black sm:block"
       >
         <ChevronLeft size={24} />
       </button>
 
       <button
         onClick={nextSlide}
-        className="bg-opacity-20 hover:bg-opacity-30 absolute top-1/2 right-4 hidden -translate-y-1/2 cursor-pointer rounded-full bg-white p-2 text-black sm:block"
+        className="bg-opacity-20 hover:bg-opacity-30 absolute top-1/2 right-4 z-10 hidden -translate-y-1/2 cursor-pointer rounded-full bg-white p-2 text-black sm:block"
       >
         <ChevronRight size={24} />
       </button>

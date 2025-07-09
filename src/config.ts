@@ -43,26 +43,24 @@ export const socialLinks = [
   },
 ];
 
+
 export const slides = [
   {
-    title: "Innovation at Its Best",
+    title: "Innovate with Technology",
     subtitle: "Building Tomorrow's Technology Today",
-    description:
-      "We create cutting-edge solutions that transform businesses and improve lives through innovative technology.",
-    bgColor: "from-blue-600 to-purple-700",
+    image:
+      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=820&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Development Team",
     subtitle: "Your Vision, Our Expertise",
-    description:
-      "Our experienced developers bring your ideas to life with modern technologies and best practices.",
-    bgColor: "from-green-500 to-blue-600",
+    image:
+      "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Quality Assurance",
     subtitle: "Excellence in Every Detail",
-    description:
-      "We ensure every project meets the highest standards of quality and performance.",
-    bgColor: "from-purple-600 to-pink-600",
+    image:
+      "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
