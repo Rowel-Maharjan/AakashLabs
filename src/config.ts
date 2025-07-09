@@ -186,4 +186,73 @@ export const allTeamMembers = [
       },
     ],
   },
+  {
+    id: 4,
+    name: "Saman Shakya",
+    role: "Ui/UX Designer",
+    image: "/team/team-4.jpg",
+    socialLinks: [
+      {
+        href: "https://www.facebook.com/AakashGroupNepal/",
+        label: "Facebook",
+        icon: faFacebookF,
+      },
+      {
+        href: "https://www.instagram.com/aakash.group/",
+        label: "Instagram",
+        icon: faInstagram,
+      },
+      {
+        href: "https://www.linkedin.com/company/aakashgroupnepal/?originalSubdomain=np",
+        label: "LinkedIn",
+        icon: faLinkedin,
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "Bijesh Malakar",
+    role: "Project Manager",
+    image: "/team/team-5.jpg",
+    socialLinks: [
+      {
+        href: "https://www.facebook.com/AakashGroupNepal/",
+        label: "Facebook",
+        icon: faFacebookF,
+      },
+      {
+        href: "https://www.instagram.com/aakash.group/",
+        label: "Instagram",
+        icon: faInstagram,
+      },
+      {
+        href: "https://www.linkedin.com/company/aakashgroupnepal/?originalSubdomain=np",
+        label: "LinkedIn",
+        icon: faLinkedin,
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "Prashant Shrestha",
+    role: "Support Staff",
+    image: "/team/team-6.jpg",
+    socialLinks: [
+      {
+        href: "https://www.facebook.com/AakashGroupNepal/",
+        label: "Facebook",
+        icon: faFacebookF,
+      },
+      {
+        href: "https://www.instagram.com/aakash.group/",
+        label: "Instagram",
+        icon: faInstagram,
+      },
+      {
+        href: "https://www.linkedin.com/company/aakashgroupnepal/?originalSubdomain=np",
+        label: "LinkedIn",
+        icon: faLinkedin,
+      },
+    ],
+  },
 ];

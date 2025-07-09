@@ -38,11 +38,13 @@ const Team = () => {
               key={member.id}
               className="group overflow-hidden rounded-lg bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl"
             >
-              <img
-                src={member.image}
-                alt={member.name}
-                className="object-cover transition-transform duration-500 group-hover:scale-115"
-              />
+              <div className="aspect-[3/2] w-full overflow-hidden">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
 
               <div className="p-6 md:p-10">
                 <a href={`/about/team/${member.id}`} className="block">
