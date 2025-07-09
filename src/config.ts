@@ -3,7 +3,15 @@ import {
   faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import { Target, Lightbulb, Users, Award } from "lucide-react";
+import {
+  Target,
+  Lightbulb,
+  Users,
+  Award,
+  MapPin,
+  Mail,
+  Phone,
+} from "lucide-react";
 
 import { PATHNAME } from "./pathname";
 
@@ -254,5 +262,26 @@ export const allTeamMembers = [
         icon: faLinkedin,
       },
     ],
+  },
+];
+
+export const contactData = [
+  {
+    id: "location",
+    title: "Main Location",
+    icon: MapPin,
+    content: ["Putalisadak, Kathmandu", "Lalitpur, Nepal"],
+  },
+  {
+    id: "email",
+    title: "Email Address",
+    icon: Mail,
+    content: ["help@support.com", "info@aakashlab.net"],
+  },
+  {
+    id: "phone",
+    title: "Phone Number",
+    icon: Phone,
+    content: ["+977 9876540987", "+977-9874615942"],
   },
 ];
