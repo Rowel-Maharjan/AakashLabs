@@ -5,8 +5,8 @@ import useFetch from "../../services/useFetch";
 const MovieList = () => {
   const {
     data: movies,
-    loading: moviesLoading,
-    error: moviesError,
+    // loading: moviesLoading,
+    // error: moviesError,
   } = useFetch(() => fetchMovies({ query: "" }));
 
   console.log(movies);
