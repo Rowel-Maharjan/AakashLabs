@@ -1,7 +1,8 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import { fetchMovies } from "../../services/api";
 import useFetch from "../../services/useFetch";
+import MovieCard from "./MovieCard";
+import type { Movie } from "../../types";
 
 const MovieList = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -69,15 +70,8 @@ const MovieList = () => {
           </p>
         ) : (
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-            {resultsToShow?.map((movie: any) => (
-              <div
-                key={movie.id}
-                className="rounded-lg bg-white p-4 shadow-md transition-shadow hover:shadow-xl"
-              >
-                <h3 className="text-xl font-semibold text-gray-800">
-                  {movie.title}
-                </h3>
-              </div>
+            {resultsToShow?.map((movie: Movie) => (
+              <MovieCard key={movie.id} {...movie} />
             ))}
           </div>
         )}
