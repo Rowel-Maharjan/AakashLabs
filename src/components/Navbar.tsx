@@ -23,21 +23,21 @@ const Navbar: React.FC = () => {
         className="fixed z-50 mx-auto w-full bg-white px-4 shadow-md sm:px-6"
       >
         <div className="mx-auto flex h-20 max-w-[1200px] items-center justify-between">
-          <Link to={PATHNAME.home}>
+          <a href={PATHNAME.home}>
             <h1 className="text-2xl font-bold text-blue-600">AakashLabs</h1>
-          </Link>
+          </a>
 
           <nav className="hidden justify-center lg:flex lg:flex-1">
             <ul className="flex items-center space-x-10 text-base font-medium text-gray-800">
               {navbarItems.map((item) => {
                 return (
                   <li key={item.title}>
-                    <Link
-                      to={item.href}
+                    <a
+                      href={item.href}
                       className={`relative inline-flex items-center gap-1 px-1 py-1 font-[550] transition-colors duration-200 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-orange-500 after:transition-all after:duration-300 hover:text-orange-500 hover:after:w-full`}
                     >
                       {item.title}
-                    </Link>
+                    </a>
                   </li>
                 );
               })}
