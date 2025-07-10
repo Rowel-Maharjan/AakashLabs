@@ -1,32 +1,26 @@
-import { useEffect } from "react";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { fetchMovies } from "../../services/api";
+import useFetch from "../../services/useFetch";
 
 const MovieList = () => {
-  const fetchMovie = async () => {
-    const url = "https://imdb236.p.rapidapi.com/api/imdb/top250-movies";
-    const options = {
-      method: "GET",
-      headers: {
-        "x-rapidapi-key": import.meta.env.VITE_RAPIDAPI_KEY,
-        "x-rapidapi-host": "imdb236.p.rapidapi.com",
-      },
-    };
+  const {
+    data: movies,
+    loading: moviesLoading,
+    error: moviesError,
+  } = useFetch(() => fetchMovies({ query: "" }));
 
-    try {
-      const response = await fetch(url, options);
-      const result = await response.json();
-      console.log(result);
-    } catch (error) {
-      console.error(error);
-    }
-  };
+  console.log(movies);
 
-  useEffect(() => {
-    fetchMovie();
-  }, []);
+  console.log(movies);
 
-  return <div>MovieList</div>;
+  return (
+    <div>
+      <div>Movie List</div>
+      {movies?.map((movie: any) => (
+        <div key={movie.id}>{movie.title}</div>
+      ))}
+    </div>
+  );
 };
 
 export { MovieList };
-
-//   "https://imdb236.p.rapidapi.com/api/imdb/autocomplete?query=break";
