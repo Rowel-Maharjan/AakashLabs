@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { navbarItems, socialLinks } from "../../config";
-import { PATHNAME } from "../../pathname";
+import { PATHNAME } from "../pathname";
+import { navbarItems, socialLinks } from "../config";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,24 +23,32 @@ const Navbar: React.FC = () => {
         className="fixed z-50 mx-auto w-full bg-white px-4 shadow-md sm:px-6"
       >
         <div className="mx-auto flex h-20 max-w-[1200px] items-center justify-between">
-          <a href={PATHNAME.home}>
+          <Link to={PATHNAME.home}>
             <h1 className="text-2xl font-bold text-blue-600">AakashLabs</h1>
-          </a>
+          </Link>
 
           <nav className="hidden justify-center lg:flex lg:flex-1">
-            <ul className="flex space-x-10 text-base font-medium text-gray-800">
+            <ul className="flex items-center space-x-10 text-base font-medium text-gray-800">
               {navbarItems.map((item) => {
                 return (
                   <li key={item.title}>
-                    <a
-                      href={item.href}
+                    <Link
+                      to={item.href}
                       className={`relative inline-flex items-center gap-1 px-1 py-1 font-[550] transition-colors duration-200 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-orange-500 after:transition-all after:duration-300 hover:text-orange-500 hover:after:w-full`}
                     >
                       {item.title}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
+              <li>
+                <Link
+                  to={PATHNAME.movie}
+                  className="rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+                >
+                  Movies
+                </Link>
+              </li>
             </ul>
           </nav>
 
@@ -85,6 +94,15 @@ const Navbar: React.FC = () => {
                 </li>
               );
             })}
+            <li>
+              <Link
+                to={PATHNAME.movie}
+                onClick={closeMenu}
+                className="rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+              >
+                Movies
+              </Link>
+            </li>
           </ul>
 
           <ul className="mt-6 flex space-x-3">

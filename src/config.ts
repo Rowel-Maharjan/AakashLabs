@@ -324,4 +324,8 @@ export const footerServices = [
     title: "Contact",
     link: PATHNAME.contact,
   },
+  {
+    title: "Movies",
+    link: PATHNAME.movie,
+  },
 ];

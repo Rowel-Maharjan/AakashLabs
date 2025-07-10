@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { contacts, footerServices, socialLinks } from "../../config";
+import { contacts, footerServices, socialLinks } from "../config";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
@@ -26,12 +27,12 @@ const Footer: React.FC = () => {
             <ul className="ml-3 space-y-1 text-gray-400">
               {footerServices.map((item, i) => (
                 <li key={i}>
-                  <a
-                    href={item.link}
+                  <Link
+                    to={item.link}
                     className="transition-colors duration-200 hover:text-white"
                   >
                     {item.title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
