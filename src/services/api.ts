@@ -1,9 +1,10 @@
 export const TMDB_CONFIG = {
   BASE_URL: "https://api.themoviedb.org/3",
-  API_KEY: import.meta.env.MOVIE_API_KEY,
+  API_KEY:
+    "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyM2JmMWFkMTE1OGE5NTZjYTdiNTRmZWRlYjgzYzQ2MiIsIm5iZiI6MTc0NjYxODA3Mi4wMTUsInN1YiI6IjY4MWI0NmQ4YjhjOWFiZDRiNDlmMDQ4MSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.3eMpiQlxDSwaDpDfSuuSxrfnMX_wlvUXxsqQddNmi-U",
   headers: {
     accept: "application/json",
-    Authorization: `Bearer ${import.meta.env.MOVIE_API_KEY}`,
+    Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyM2JmMWFkMTE1OGE5NTZjYTdiNTRmZWRlYjgzYzQ2MiIsIm5iZiI6MTc0NjYxODA3Mi4wMTUsInN1YiI6IjY4MWI0NmQ4YjhjOWFiZDRiNDlmMDQ4MSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.3eMpiQlxDSwaDpDfSuuSxrfnMX_wlvUXxsqQddNmi-U`,
   },
 };
 
