@@ -1,3 +1,5 @@
+import type { MovieDetails } from "../types";
+
 export const TMDB_CONFIG = {
   BASE_URL: "https://api.themoviedb.org/3",
   API_KEY: import.meta.env.VITE_TMDB_API_KEY,
@@ -22,4 +24,27 @@ export const fetchMovies = async ({ query }: { query: string }) => {
 
   const data = await response.json();
   return data.results;
+};
+
+export const fetchMoviesDetails = async (
+  movieId: string,
+): Promise<MovieDetails> => {
+  try {
+    const endpoint = `${TMDB_CONFIG.BASE_URL}/movie/${movieId}?api_key=${TMDB_CONFIG.API_KEY}`;
+    const response = await fetch(endpoint, {
+      method: "GET",
+      headers: TMDB_CONFIG.headers,
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch movies");
+    }
+
+    const data = await response.json();
+
+    return data;
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
 };

@@ -37,7 +37,7 @@ const MovieList = () => {
   const resultsToShow = searchQuery.trim() ? searchMovie : movies;
 
   return (
-    <section className="relative z-10 bg-[#F6F7FB] pt-24 pb-10 md:pt-32 md:pb-32">
+    <section className="relative z-10 bg-[#F6F7FB] pt-14 pb-10 md:pt-20 md:pb-32">
       <div className="container mx-auto min-h-screen max-w-[1200px] px-4">
         <div className="mb-10 flex flex-col items-center text-center">
           <h1 className="mb-4 text-4xl font-bold text-gray-800">Movie App</h1>

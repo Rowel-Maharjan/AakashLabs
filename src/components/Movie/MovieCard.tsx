@@ -9,7 +9,7 @@ const MovieCard = ({
   release_date,
 }: Movie) => {
   return (
-    <Link to={`/movies/${id}`} className="group block w-full">
+    <Link to={`/movie/${id}`} className="group block w-full">
       <div className="relative overflow-hidden rounded-xl bg-gray-900 shadow-md transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
         <div className="relative h-[400px] overflow-hidden">
           <img

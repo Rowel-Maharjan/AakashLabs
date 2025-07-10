@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { PATHNAME } from "../pathname";
 import { navbarItems, socialLinks } from "../config";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,12 +16,18 @@ const Navbar: React.FC = () => {
     setMobileMenuOpen(false);
   };
 
+  const location = useLocation();
+
+  if (
+    location.pathname.startsWith(PATHNAME.movie) &&
+    location.pathname !== PATHNAME.movie
+  ) {
+    return null;
+  }
+
   return (
-    <header className="relative z-50 w-full">
-      <div
-        id="header-sticky"
-        className="fixed z-50 mx-auto w-full bg-white px-4 shadow-md sm:px-6"
-      >
+    <header className="sticky top-0 z-50 w-full">
+      <div className="z-50 mx-auto w-full bg-white px-4 shadow-md sm:px-6">
         <div className="mx-auto flex h-20 max-w-[1200px] items-center justify-between">
           <a href={PATHNAME.home}>
             <h1 className="text-2xl font-bold text-blue-600">AakashLabs</h1>
