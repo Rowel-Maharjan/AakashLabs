@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      toast.error("Post API Not Working 😔");
+      toast.error("Post API on api.aakashlabs.com is not Working 😔");
     }
   };
   return (
