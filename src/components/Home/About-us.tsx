@@ -7,11 +7,11 @@ const AboutUs = () => {
     <>
       <section
         id="about"
-        className="relative z-10 bg-[#F6F7FB] pt-[10px] pb-[10px] md:pt-[130px] md:pb-[130px]"
+        className="relative z-10 bg-[#F6F7FB] pt-[10px] pb-[10px] md:pt[80px] lg:pt-[130px] md:pb-[130px]"
       >
         <div className="container mx-auto max-w-[1200px] px-4">
           <div className="flex flex-wrap items-start">
-            <div className="relative w-full lg:w-5/12 xl:w-1/2 hidden md:block">
+            <div className="relative w-full lg:w-5/12 xl:w-1/2 hidden lg:block">
               <div className="relative">
                 <div className="w-full">
                   <img
@@ -59,7 +59,7 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:pt-20 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:pt-20 xl:grid-cols-4">
             {features.map((feature, index) => (
               <div
                 key={index}

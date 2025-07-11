@@ -41,7 +41,7 @@ const Slider = () => {
   };
 
   return (
-    <section id="home" className="relative h-screen overflow-hidden">
+    <section id="home" className="relative md:h-screen h-[90vh] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
