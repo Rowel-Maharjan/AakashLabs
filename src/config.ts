@@ -290,7 +290,7 @@ export const contacts = [
   {
     Icon: MapPin,
     title: "Locations",
-    href: "https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873",
+    href: "https://www.google.com/maps/place/Aakash+Labs/@27.7032021,85.3200844,681m/data=!3m1!1e3!4m15!1m8!3m7!1s0x39eb19a64b5f13e1:0x28b2d0eacda46b98!2sPutalisadak,+Kathmandu+44600!3b1!8m2!3d27.7029275!4d85.3223452!16s%2Fg%2F1v76y1b5!3m5!1s0x39eb19c42539e481:0xd9d4a660ac7b44f2!8m2!3d27.7016427!4d85.3224273!16s%2Fg%2F11gg9d3lrr!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDcwOC4wIKXMDSoASAFQAw%3D%3D",
     text: "Putalisadak, Kathmandu",
   },
   {
@@ -302,8 +302,8 @@ export const contacts = [
   {
     Icon: Phone,
     title: "Phone Us",
-    href: "tel:+012-345-6789",
-    text: "+977 9876540987",
+    href: "tel:+977 9843800581",
+    text: "+977 9843800581",
   },
 ];
 
